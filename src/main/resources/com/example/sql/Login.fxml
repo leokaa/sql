@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="430.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sql.LoginController">
+   <children>
+      <BorderPane prefHeight="442.0" prefWidth="659.0">
+         <left>
+            <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="255.0" style="-fx-background-color: #FFE4C4;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="idPlay" fitHeight="336.0" fitWidth="104.0" layoutX="62.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../image/play-station.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="60.0" layoutY="31.0" prefHeight="38.0" prefWidth="128.0" text="L2TEAM" textAlignment="CENTER">
+                     <font>
+                        <Font name="Arial Black" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="322.0" text="Facebook: " textFill="#2b3215">
+                     <font>
+                        <Font name="Britannic Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="393.0" text="Gmail:">
+                     <font>
+                        <Font name="Britannic Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="109.0" layoutY="320.0" prefHeight="21.0" prefWidth="73.0" style="-fx-textdecoratin: underline;" text="Leo Ka">
+                     <font>
+                        <Font name="Calibri Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="109.0" layoutY="356.0" text="LeoKaTV">
+                     <font>
+                        <Font name="Calibri Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="105.0" layoutY="391.0" text="Leoka@gmail.com">
+                     <font>
+                        <Font name="Calibri Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="358.0" text="Youtube: " textFill="#2b3215">
+                     <font>
+                        <Font name="Britannic Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </left>
+         <right>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="478.0" prefWidth="420.0" style="-fx-background-color: #ECECE7;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="idUser" fitHeight="87.0" fitWidth="99.0" layoutX="198.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../image/locksmith.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="12.0" layoutY="179.0" prefHeight="21.0" prefWidth="98.0" text="Tài khoản">
+                     <font>
+                        <Font name="Georgia Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="idTaiKhoan" layoutX="122.0" layoutY="174.0" prefHeight="31.0" prefWidth="268.0" style="-fx-background-radius: 0px;">
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor>
+                  </TextField>
+                  <Label layoutX="12.0" layoutY="231.0" text="Mật khẩu">
+                     <font>
+                        <Font name="Georgia Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="idMatKhau" layoutX="122.0" layoutY="226.0" prefHeight="31.0" prefWidth="268.0" style="-fx-background-radius: 0px;" />
+                  <Button fx:id="BtnDangNhap" layoutX="28.0" layoutY="310.0" mnemonicParsing="false" onAction="#dangnhap" prefHeight="47.0" prefWidth="368.0" style="-fx-background-color: #CD5C5C; -fx-background-radius: 0px;" text="Đăng nhập" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BtnThoat" layoutX="27.0" layoutY="373.0" mnemonicParsing="false" onAction="#thoat" prefHeight="47.0" prefWidth="369.0" style="-fx-background-color: #CD5C5C; -fx-background-radius: 0px;" text="Thoát" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="labelVali" layoutX="122.0" layoutY="267.0" prefHeight="21.0" prefWidth="268.0" style="-fx-alignment: CENTER;" textAlignment="CENTER" textFill="#bf4b4b">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
